@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* Written by Batuhan Bilal Atalay for ... Demo Web Site Project. */
+
+body {
+background-color:#000;
+color:#fff;
+font-size:14px;
+font-family: 'Roboto', sans-serif;
+font-weight:400;
+margin:0px;
+padding:0px;
+letter-spacing:0.3px;
+	}
+.width1200 {
+maxwidth:1200px !important;	
+	}
+a {
+color:#fff !important;	
+	}
+a:hover {
+text-decoration:none !important;	
+	}	
+.header a {
+cursor:pointer;	
+	}
+.header_bg {
+background-color:rgba(0, 0, 0, 0.8);
+transition:background-color 1s;
+	}		
+.slider {
+background:no-repeat center url(../imgs/slider_bg.jpg);
+background-size:cover ;
+height:100vh;
+overflow:hidden;
+	}
+.slider .carousel {
+height:100vh !important;	
+	}
+.slider .carousel-item .container {
+height:100vh !important;
+	} 
+
+.slider h1 {
+font-weight:700;
+font-size:65px;
+	}
+.slider p {
+font-size:16px;	
+	}	
+.promotionfilm {
+height:500px;
+overflow:hidden;
+position:relative;
+z-index:0;
+	}
+.promotionfilm .gradient {
+position:absolute;
+width:100%;
+height:100%;
+background: rgb(255,255,255);
+background: -moz-radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#000000",GradientType=1);
+z-index:-8;
+	}
+.promotionfilm video {
+position: absolute;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+-ms-transform: translateX(-50%) translateY(-50%);
+-moz-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+opacity:0.3;
+z-index:-9;
+	}
+.promotionfilm h2 {
+font-weight:700;
+font-size:25px;	
+	}
+.promotionfilm .content {
+position:absolute;
+display:block;
+left:50%;
+top:50%;
+-ms-transform: translateX(-50%) translateY(-50%);
+-moz-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+	}
+.promotionfilm .content img:hover {
+animation-name:dondurme;
+animation-duration:1s;
+	
+	}				
+@keyframes dondurme {
+0%   {transform: rotateZ(0deg);}
+100% {transform: rotateZ(360deg);}	
+	}
+.modal-content {
+background-color:#000;
+}
+.modal-header {
+border-bottom:none;
+	}	
+.close {
+color:#fff !important;	
+	}
+.keepcool {
+background:no-repeat center url(../imgs/keepcool_bg.jpg);
+background-size:cover ;
+height:500px !important;
+max-height:calc(500px+50%);
+	}
+.keepcool h3 {
+font-weight:700;
+font-size:65px;
+	}
+.keepcool p {
+font-size:16px;	
+	}
+.footer h4 {
+font-weight:700;
+font-size:14px;	
+	}
+.footer li a {
+opacity:0.5;	
+	}
+.footer li a:hover{
+opacity:1;
+	}							
+.footerline {
+border-top:1px solid #333;	
+	}
+
+
+
+@media (max-width: 767.98px) { 
+
+#navBg {
+background-color:rgba(0, 0, 0, 0.8);
+transition:background-color 1s;
+	}
+.slider h1 {
+font-weight:700;
+font-size:25px;
+	}
+.slider p {
+font-size:10px;	
+	}
+.carousel-inner {
+padding-top:100px;	
+	}
+.slider_product_img {
+max-height:500px;	
+	}
+.promotionfilm h2 {
+font-weight:700;
+font-size:25px;	
+	}	
+.promotionfilm p {
+font-size:14px;
+	}
+.promotionfilm img{
+width:100px;
+height:100px;
+	}
+	
+.keepcool h3 {
+font-weight:700;
+font-size:25px;	
+	}	
+.keepcool p {
+font-size:14px;
+	}
+.navbar-brand img {
+width:80%;
+height:auto;	
+	}			
+
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+@media (min-width: 1200px) { ... }

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Erbauer markası için yapılmış demo tanıtım web sayfasıdır.">
+  	<meta name="keywords" content="erbauer, el aletleri, koçtaş">
+  	<meta name="author" content="Batuhan Bilal Atalay">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+   	<script src="js/animatescroll.js"></script>
+    <title>Erbauer Demo</title>
+    <script>
+	$("document").ready(function($){
+   		var addBg = $('#navBg');
+
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				addBg.addClass("header_bg");
+			} else {
+				addBg.removeClass("header_bg");
+			}
+		});
+	});
+	</script>
+    </head>
+    
+    <body>
+        <div class="container-fluid p-0">
+        	<!-- HEADER -->
+            <div class="container-fluid fixed-top p-0" id="navBg">
+                <div class="container width1200 header pt-3 pb-3">
+                    <nav class="navbar navbar-expand-lg navbar-dark  p-0">
+                        <a class="navbar-brand" href="#"><img src="imgs/logo.png" width="auto" height="40" alt="ERBAUER"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class=" navbar-nav ml-auto font-weight-bold">
+                                <li class="nav-item">
+                                <a class="nav-link text-center" onclick="$('#slider').animatescroll();">ÜRÜNLER <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link text-center" onclick="$('#promotionfilmcontainer').animatescroll({padding:82});">TANITIM FİLMİ</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link text-center" onclick="$('#keepcool').animatescroll({padding:82});">KEEP COOL TEKNOLOJİSİ</a>
+                                </li>                                  
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- /HEADER -->
+            <!-- SLIDER -->
+            <div class="container-fluid p-0 slider" id="slider">
+                	<div id="sliderbuttons" class="carousel slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            	<div class="container width1200">
+                                	<div class="row h-100">
+                                    	<div class="col-lg col-md-6 col-sm-12 text-center text-xl-left text-lg-left text-md-left my-auto">
+                                        	<h1 class=""> Güvenilir, Güçlü, Sade.</h1>
+                                            <p class="mt-xl-5 mt-lg-5">Erbauer, işlerin üstesinden gelebilmeniz için size güç ve rahatlık sağlar. 
+Yıllar geçse de takım çantanızda hep yer alacak dayanıklı el aletleri üretir. Güvenilir, sağlam ve sade tasarımlı bu ürünler, yapılması gereken iş ne olursa olsun başarıyla tamamlar. 5 yıl garantili olan Erbauer ürünleri Türkiyede sadece Koçtaş’ta satılmaktadır.<br/><img src="imgs/sadece_koctasta.png" class="mt-xl-5 mt-lg-5" alt="Sadece KOÇTAŞ'ta." /></p>
+                                        </div>
+                                        <div class="col-lg col-md-6 col-sm-12 my-auto text-center">
+                                        	<img src="imgs/erbauer_product.png" class="img-fluid slider_product_img" alt="" />
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="carousel-item">
+                            	<div class="container width1200">
+                                	<div class="row h-100">
+                                    	<div class="col-lg col-md-6 col-sm-12 text-center text-xl-left text-lg-left text-md-left my-auto">
+                                        	<h1 class="">Sağlam, Uzun Ömürlü, Ekonomik.</h1>
+                                            <p class="mt-xl-5 mt-lg-5">Erbauer, işlerin üstesinden gelebilmeniz için size güç ve rahatlık sağlar. 
+Yıllar geçse de takım çantanızda hep yer alacak dayanıklı el aletleri üretir. Güvenilir, sağlam ve sade tasarımlı bu ürünler, yapılması gereken iş ne olursa olsun başarıyla tamamlar. 5 yıl garantili olan Erbauer ürünleri Türkiyede sadece Koçtaş’ta satılmaktadır.<br/><img src="imgs/sadece_koctasta.png" class="mt-xl-5 mt-lg-5" alt="Sadece KOÇTAŞ'ta." /></p>
+                                        </div>
+                                        <div class="col-lg col-md-6 col-sm-12 my-auto text-center">
+                                        	<img src="imgs/erbauer_product2.png" class="img-fluid slider_product_img" alt="" />
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                           
+                          
+                          </div>
+                          <a class="carousel-control-prev" href="#sliderbuttons" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#sliderbuttons" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                    </div>
+            </div>
+            <!-- /SLIDER -->
+            <!-- PROMOTION FILM -->
+            <div class="container-fluid p-0 promotionfilm" id="promotionfilmcontainer">
+            	<div class="gradient"></div>
+                <video autoplay muted loop>
+        			<source src="imgs/promotion_film.mp4" type="video/mp4">
+        		</video>
+                <div class="container width1200">
+                	<div class="row">
+                    	<div class="text-center content">
+                		<a data-toggle="modal" data-target="#promotionfilm" style="cursor:pointer;">
+                        <img src="imgs/play.png" class="img-fluid" width="135" height="135" alt="Tanıtım Filmi" />
+                    	<h2 class="mt-2 mb-2">Tanıtım Filmi</h2>
+                    	<p>Tanıtım filmimizi henüz seyretmediniz mi ?</p>
+                        </a>
+                		</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- modal -->
+            <div class="modal fade" id="promotionfilm" tabindex="-1" role="dialog" aria-labelledby="promotionfilm" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">ERBAUER Tanıtım Filmi</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <video width="100%" height="auto" autoplay controls>
+                      <source src="imgs/promotion_film.mp4" type="video/mp4">
+                      </video>
+                  </div>
+                  </div>
+              </div>
+            </div>
+            <!-- / modal -->
+            <!-- /PROMOTION FILM -->
+            <!-- KEEPCOOL -->
+            <div class="container-fluid p-0 keepcool" id="keepcool">
+            	<div class="container width1200 h-100">
+                	<div class="row h-100">
+                    	<div class="col-lg col-md col-sm-12 my-auto">
+                        	<img src="imgs/batarya.png" class="img-fluid" alt="Keep Cool Teknolojisi" />
+                        </div>
+                        <div class="col col-md col-sm-12 text-center text-xl-left text-lg-left text-md-left my-auto">
+                        	<h3>Keep Cool Teknolojisi</h3>
+                            <p class="mt-xl-5 mt-lg-5">Soğutmalı pil teknolojisi, sıcaklığı etkin bir şekilde yöneterek pil hücrelerini serin tutar ve hücrelerin aşırı ısınmasını önler. Bu teknoloji, çalışma süresini yüzde 25 uzatırken; yüzde 100’e varan uzun kullanım ömrü sağlar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /KEEPCOOL -->
+            <!-- FOOTER -->
+            <div class="container-fluid p-0">
+            	<div class="container width1200 footer">
+                	<div class="row my-5">
+                    	<div class="col">
+                        	<h4 class="my-4">KURUMSAL</h4>
+                            <ul class="nav flex-column">
+                            	<li class="nav-item"><a href="#">Koçtaş Hakkında</a></li>
+                                <li class="nav-item"><a href="#">İnsan Kaynakları</a></li>
+                                <li class="nav-item"><a href="#">Erbauer Hakkında</a></li>
+                                <li class="nav-item"><a href="#">Bize Ulaşın</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                        	<h4 class="my-4">ÜRÜNLER</h4>
+                            <ul class="nav flex-column">
+                            	<li class="nav-item"><a href="#">Elektrikli Aletler</a></li>
+                                <li class="nav-item"><a href="#">El Aletleri</a></li>
+                                <li class="nav-item"><a href="#">Aksesuarlar</a></li>
+                                <li class="nav-item"><a href="#">Sanal Mağaza</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                        	<h4 class="my-4">MÜŞTERİ HİZMETLERİ</h4>
+                            <ul class="nav flex-column">
+                            	<li class="nav-item"><a href="#">Yetkili Servisler</a></li>
+                                <li class="nav-item"><a href="#">Koçtaş Mağazaları</a></li>
+                                <li class="nav-item"><a href="#">Online Destek</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                        	<h4 class="my-4">BLOG</h4>
+                            <ul class="nav flex-column">
+                            	<li class="nav-item"><a href="#">ERBAUER ile Yapın</a></li>
+                                <li class="nav-item"><a href="#">Ürün Videoları</a></li>
+                                <li class="nav-item"><a href="#">Fikirler ve Öneriler</a></li>
+                            </ul>
+                        </div>
+                         <div class="col">
+                        	<h4 class="my-4">SOSYAL MEDYA</h4>
+                            <ul class="nav">
+                            	<li class="nav-item"><a href="#"><i class="fab fa-facebook-square fa-2x mr-1"></i></a></li>
+                                <li class="nav-item"><a href="#"><i class="fab fa-twitter-square fa-2x mr-1"></i></a></li>
+                                <li class="nav-item"><a href="#"><i class="fab fa-linkedin fa-2x mr-1"></i></a></li>
+                                <li class="nav-item"><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid p-0 footerline">
+            	<div class="container width1200">
+                	<div class="row py-3 h-100">
+                    	<div class="col-10 my-auto text-left"><strong>ERBAUER ürünleri sadece KOÇTAŞ’ta satılmaktadır.</strong><br/> © Copyright 2019. Tüm Hakları Saklıdır.</div>
+                        <div class="col-2 my-auto text-right">
+                        	<a href="#"><img src="imgs/koctas_logo.png" alt="Koçtaş" class="img-fluid" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /FOOTER -->
+        </div>
+    </body>
+</html>
